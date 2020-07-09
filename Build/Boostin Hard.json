@@ -1,9 +1,9 @@
 {
 "companyName": "DefaultCompany",
-"productName": "Planet Wrecked",
-"dataUrl": "Build.data.unityweb",
-"wasmCodeUrl": "Build.wasm.code.unityweb",
-"wasmFrameworkUrl": "Build.wasm.framework.unityweb",
+"productName": "Project Boost",
+"dataUrl": "Boostin Hard.data.unityweb",
+"wasmCodeUrl": "Boostin Hard.wasm.code.unityweb",
+"wasmFrameworkUrl": "Boostin Hard.wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
