@@ -1,9 +1,9 @@
 {
 "companyName": "DefaultCompany",
 "productName": "Project Boost",
-"dataUrl": "Boostin Hard.data.unityweb",
-"wasmCodeUrl": "Boostin Hard.wasm.code.unityweb",
-"wasmFrameworkUrl": "Boostin Hard.wasm.framework.unityweb",
+"dataUrl": "Rocket Penis.data.unityweb",
+"wasmCodeUrl": "Rocket Penis.wasm.code.unityweb",
+"wasmFrameworkUrl": "Rocket Penis.wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
