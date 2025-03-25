@@ -11,7 +11,7 @@ func _process(delta):
 	look_at(get_global_mouse_position())
 	var movement_vector = get_movement_vector()
 	var direction = movement_vector.normalized().rotated(rotation)
-	global_position += direction * delta * 150
+	global_position += direction * delta * 50
 
 func get_movement_vector():
 	var forward_movement = Input.get_action_strength("move_forward") - Input.get_action_strength("move_backward")
