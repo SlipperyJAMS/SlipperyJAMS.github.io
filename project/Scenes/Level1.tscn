@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnrmdt8k3b56x"]
+
+[ext_resource type="Texture2D" uid="uid://byctvpmns5scs" path="res://Background.png" id="1_xbo72"]
+[ext_resource type="PackedScene" uid="uid://cot5t4cnf1s73" path="res://Scenes/Player/playership.tscn" id="2_rru1e"]
+[ext_resource type="PackedScene" uid="uid://vai8bowcsave" path="res://Scenes/Game_camera/game_camera.tscn" id="3_v88en"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(236, 188)
+texture = ExtResource("1_xbo72")
+
+[node name="PlayerShip" parent="." instance=ExtResource("2_rru1e")]
+position = Vector2(120, 98)
+
+[node name="GameCamera" parent="." instance=ExtResource("3_v88en")]
+position = Vector2(320, 180)
