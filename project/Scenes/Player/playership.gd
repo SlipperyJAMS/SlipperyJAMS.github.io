@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-var max_speed = 150.0
-var acceleration = 5
+var max_speed = 200
+var acceleration = 200
 
 func _ready() -> void:
 	pass # Replace with function body.
@@ -10,7 +10,7 @@ func _ready() -> void:
 func _physics_process(delta):
 	look_at(get_global_mouse_position())
 	var input_vector := Vector2(0, Input.get_axis("move_forward", "move_backward"))
-	velocity += input_vector.rotated(rotation + 90) * acceleration
+	velocity += input_vector.rotated(rotation + 1.57) * acceleration * delta
 	velocity = velocity.limit_length(max_speed)
 	
 	
@@ -28,16 +28,5 @@ func _physics_process(delta):
 		global_position.x = screen_size.x
 	elif global_position.x > screen_size.x:
 		global_position.x = 0
-	
-	#var direction = movement_vector.normalized().rotated(rotation)
-	#if (movement_vector.x != 0):
-		#max_speed = 1
-		#velocity = movement_vector * max_speed
-		#global_position += direction * velocity
-		#
-	#if (movement_vector.x == 0):
-		#var deceleration_rate = 0.03
-		#max_speed = move_toward(150, 0, deceleration_rate)
-		#velocity = velocity * max_speed
-		##global_position += direction * delta * max_speed
+
 
