@@ -7,6 +7,8 @@
 radius = 4.0
 
 [node name="PlayerShip" type="CharacterBody2D" groups=["Player"]]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_emit4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -15,3 +17,9 @@ texture = ExtResource("1_m6lmo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_x60sn")
+
+[node name="Muzzle" type="Node2D" parent="."]
+position = Vector2(5, 0)
+
+[node name="FireDelayTimer" type="Timer" parent="."]
+one_shot = true
