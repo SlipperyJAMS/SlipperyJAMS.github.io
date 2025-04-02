@@ -14,6 +14,7 @@ var vel := Vector2(0,0)
 var bullet_scene = preload("res://Scenes/Bullet/bullet.tscn")
 
 func _process(delta):
+	#fireDelay = randf_range(0.002, 0.05)
 	if Input.is_action_pressed("shoot") and fireDelayTimer.is_stopped() :
 		fireDelayTimer.start(fireDelay)
 		
